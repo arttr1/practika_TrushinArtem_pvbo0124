@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         OrderService orderService = new OrderService();
 
-        System.out.println("=== 🛒 Тест оформления заказов с разными ИНН ===");
+        System.out.println("=== Тест оформления заказов с разными ИНН ===");
         testOrder(orderService, "Иванов Иван Иванович", "7707083893");       
         testOrder(orderService, "Петрова Анна", "500100732259");             
         testOrder(orderService, "Сидоров С.С.", "123");                      
