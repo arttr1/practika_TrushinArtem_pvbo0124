@@ -32,7 +32,7 @@ public class LabClass {
         }
 
         if (matches.size() > 1) {
-            System.out.println("⚠️ Найдено несколько совпадений:");
+            System.out.println("Найдено несколько совпадений:");
             for (Student s : matches) {
                 System.out.println("  - " + s.getName());
             }
