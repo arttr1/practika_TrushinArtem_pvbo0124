@@ -1,13 +1,5 @@
 // task1/ArrayQueue.java
 
-/**
- * ООП-реализация очереди.
- * Инвариант (после любого публичного метода):
- *   - items != null, capacity > 0
- *   - front ∈ [-1, capacity), rear ∈ [-1, capacity)
- *   - (isEmpty ⇔ front == -1 && rear == -1)
- *   - (¬isEmpty ⇒ 0 ≤ front ≤ rear < capacity)
- */
 public class ArrayQueue {
     private Object[] items;
     private int front;
