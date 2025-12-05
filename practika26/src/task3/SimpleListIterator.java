@@ -3,7 +3,7 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 public class SimpleListIterator<T> implements Iterator<T> {
-    private Node<T> current;
+    private SimpleList.Node<T> current;
 
     public SimpleListIterator(SimpleList<T> list) {
         this.current = list.getHead();

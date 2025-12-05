@@ -39,12 +39,12 @@ public class Main {
             "99/99/9999"
         };
 
-        System.out.println("✅ Правильные:");
+        System.out.println("Правильные:");
         for (String s : valid) {
             System.out.println(s + " → " + isValidDate(s));
         }
 
-        System.out.println("\n❌ Неправильные:");
+        System.out.println("\nНеправильные:");
         for (String s : invalid) {
             System.out.println(s + " → " + isValidDate(s));
         }

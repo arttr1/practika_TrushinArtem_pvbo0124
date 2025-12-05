@@ -30,7 +30,7 @@ public class Main {
         List<String> prices = extractPrices(text);
         System.out.println("Найденные цены:");
         for (String p : prices) {
-            System.out.println("✅ " + p);
+            System.out.println(p);
         }
     }
 }

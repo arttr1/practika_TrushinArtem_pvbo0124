@@ -10,19 +10,19 @@ public class Main {
         System.out.println("Добавление 10 элементов:");
         for (int i = 0; i < keys.length; i++) {
             ht.hashtabAdd(keys[i], values[i]);
-            System.out.println("  ✅ " + keys[i] + " → " + values[i]);
+            System.out.println("  " + keys[i] + " → " + values[i]);
         }
 
         System.out.println("\nВсего элементов: " + ht.size());
 
         // Задание 3: демонстрация поиска
-        System.out.println("\n🔎 Поиск:");
+        System.out.println("\nПоиск:");
         System.out.println("name → " + ht.hashtabLookup("name"));
         System.out.println("salary → " + ht.hashtabLookup("salary"));
         System.out.println("nonexistent → " + ht.hashtabLookup("xyz"));
 
         // Задание 3: демонстрация удаления
-        System.out.println("\n🗑️ Удаление 'job' и 'hobby':");
+        System.out.println("\nУдаление 'job' и 'hobby':");
         System.out.println("До удаления 'job': " + ht.hashtabLookup("job"));
         ht.hashtabDelete("job");
         System.out.println("После удаления 'job': " + ht.hashtabLookup("job"));

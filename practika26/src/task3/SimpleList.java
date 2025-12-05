@@ -3,7 +3,7 @@ public class SimpleList<T> implements Iterable<T> {
     private Node<T> head;
     private int size = 0;
 
-    private static class Node<T> {
+    public static class Node<T> {
         T data;
         Node<T> next;
         Node(T data) { this.data = data; }

@@ -10,6 +10,6 @@ public class Main {
         System.out.println("Добавлено: test → " + ht.hashtabLookup("test"));
         ht.hashtabDelete("test");
         System.out.println("После удаления: test → " + ht.hashtabLookup("test"));
-        System.out.println("✅ Базовая реализация работает");
+        System.out.println("Базовая реализация работает");
     }
 }

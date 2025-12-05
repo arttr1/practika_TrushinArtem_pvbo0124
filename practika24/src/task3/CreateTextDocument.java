@@ -10,7 +10,7 @@ public class CreateTextDocument implements ICreateDocument {
     @Override
     public IDocument createOpen() {
         TextDocument doc = new TextDocument();
-        doc.content = "Загруженный текст из файла...";
+        doc.setContent("Загруженный текст из файла...");
         doc.open();
         return doc;
     }

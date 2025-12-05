@@ -6,4 +6,6 @@ public class TextDocument implements IDocument {
     @Override public void save()  { System.out.println("Сохранён как .txt"); }
     @Override public void close() { System.out.println("Текстовый документ закрыт"); }
     @Override public String getContent() { return content; }
+    
+    public void setContent(String content) { this.content = content; }
 }

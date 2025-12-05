@@ -21,12 +21,12 @@ public class Main {
             "abcdefghijklmnopqrstuv 18340"  // пробел
         };
 
-        System.out.println("✅ Правильные:");
+        System.out.println("Правильные:");
         for (String s : valid) {
             System.out.println(s + " → " + isValid(s));
         }
 
-        System.out.println("\n❌ Неправильные:");
+        System.out.println("\nНеправильные:");
         for (String s : invalid) {
             System.out.println(s + " → " + isValid(s));
         }

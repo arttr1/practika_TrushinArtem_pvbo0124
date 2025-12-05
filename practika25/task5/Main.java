@@ -15,17 +15,17 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        String[] valid = {"user@example.com", "root@localhost"}; // ⚠️ localhost — не по regex, но в ТЗ ✅
+        String[] valid = {"user@example.com", "root@localhost"}; // localhost — не по regex, но в ТЗ
         String[] invalid = {"myhost@@@com.ru", "@my.ru", "Julia String"};
 
-        System.out.println("✅ Правильные:");
+        System.out.println("Правильные:");
         for (String e : valid) {
             // Разрешим "root@localhost" отдельно
             boolean ok = isValidEmail(e) || "root@localhost".equals(e);
             System.out.println(e + " → " + ok);
         }
 
-        System.out.println("\n❌ Неправильные:");
+        System.out.println("\nНеправильные:");
         for (String e : invalid) {
             System.out.println(e + " → " + isValidEmail(e));
         }

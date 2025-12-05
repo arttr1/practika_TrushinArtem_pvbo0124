@@ -19,12 +19,12 @@ public class Main {
         String[] valid = {"F032_Password", "TrySpy1", "Aa1_____"};
         String[] invalid = {"smart_pass", "A007", "password", "PASSWORD1", "Pass"};
 
-        System.out.println("✅ Надёжные:");
+        System.out.println("Надежные:");
         for (String p : valid) {
             System.out.println(p + " → " + isStrongPassword(p));
         }
 
-        System.out.println("\n❌ Слабые:");
+        System.out.println("\nСлабые:");
         for (String p : invalid) {
             System.out.println(p + " → " + isStrongPassword(p));
         }
